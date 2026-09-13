@@ -1,2354 +1,1323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ghorer Bazar - Fresh & Natural</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pahari Fruits Shop - Fresh natural fruits from the hills of Bangladesh">
+  <title>Pahari Fruits Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-<!-- ================= TOP BAR ================= -->
-
-<div class="top-bar">
-    <div class="container top-inner">
-
-        <span>
-            <i class="fa-solid fa-truck"></i>
-            Free delivery on orders over ৳1000
-        </span>
-
-        <span>
-            <i class="fa-solid fa-phone"></i>
-            Hotline: +880 1234-567890
-        </span>
-
-    </div>
-</div>
-
-
 <!-- ================= HEADER ================= -->
-
 <header class="header">
-
-    <div class="container header-main">
-
-        <a href="#home" class="logo">
-
-            <div class="logo-icon">
-                <i class="fa-solid fa-leaf"></i>
-            </div>
-
-            <div>
-                <div class="logo-name">
-                    Ghorer<span>Bazar</span>
-                </div>
-
-                <small>
-                    Fresh • Natural • Trusted
-                </small>
-            </div>
-
-        </a>
-
-
-        <div class="search-box">
-
-            <input
-                type="search"
-                id="searchInput"
-                placeholder="Search for products..."
-            >
-
-            <button id="searchButton">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-
-        </div>
-
-
-        <div class="header-actions">
-
-            <button class="header-action" id="wishlistButton">
-
-                <span class="action-icon">
-
-                    <i class="fa-regular fa-heart"></i>
-
-                    <b id="wishlistCount" class="badge">
-                        0
-                    </b>
-
-                </span>
-
-                <span>Wishlist</span>
-
-            </button>
-
-
-            <button class="header-action" id="cartButton">
-
-                <span class="action-icon">
-
-                    <i class="fa-solid fa-bag-shopping"></i>
-
-                    <b id="cartCount" class="badge">
-                        0
-                    </b>
-
-                </span>
-
-                <span>Cart</span>
-
-            </button>
-
-
-            <button class="header-action" id="accountButton">
-
-                <span class="action-icon">
-
-                    <i class="fa-regular fa-user"></i>
-
-                </span>
-
-                <span>Account</span>
-
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- NAVIGATION -->
-
-    <nav class="navigation">
-
-        <div class="container nav-inner">
-
-            <button
-                class="category-button"
-                id="categoryButton"
-            >
-
-                <i class="fa-solid fa-bars"></i>
-
-                All Categories
-
-                <i class="fa-solid fa-chevron-down"></i>
-
-            </button>
-
-
-            <div class="nav-links">
-
-                <a href="#home">Home</a>
-
-                <a href="#shop">Shop</a>
-
-                <a href="#categories-page">Categories</a>
-
-                <a href="#offers">Offers</a>
-
-                <a href="#new-arrivals">New Arrivals</a>
-
-                <a href="#about">About Us</a>
-
-                <a href="#blog-page">Blog</a>
-
-                <a href="#contact">Contact</a>
-
-            </div>
-
-
-            <a href="#offers" class="deals-link">
-
-                <i class="fa-solid fa-percent"></i>
-
-                Today's Deals
-
-            </a>
-
-        </div>
-
+  <div class="container nav-container">
+
+    <a href="#home" class="logo">
+      <span class="logo-icon">🍊</span>
+      <span>Pahari <b>Fruits</b></span>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#faq">FAQ</a>
     </nav>
 
+    <div class="header-actions">
+      <button class="icon-btn" id="accountButton" title="Account">👤</button>
+      <button class="icon-btn cart-button" id="cartButton" title="Shopping Cart">
+        🛒 <span id="cartCount" class="cart-count">0</span>
+      </button>
+      <button class="menu-btn" id="responsiveMenuBtn">☰</button>
+    </div>
+
+  </div>
 </header>
 
 
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="container hero-content">
 
-<main>
+    <div class="hero-text">
+      <span class="hero-label">🌿 Fresh From The Hills</span>
+      <h1>Fresh Fruits,<br><span>Natural Taste.</span></h1>
+      <p>
+        Fresh, delicious and naturally sourced fruits delivered
+        straight to your doorstep.
+      </p>
 
+      <div class="hero-buttons">
+        <a href="#products" class="btn primary-btn">Shop Now 🛒</a>
+        <a href="#categories" class="btn outline-btn">Explore Fruits</a>
+      </div>
 
-<!-- ==================================================
-                     HOME PAGE
-================================================== -->
-
-<section class="page active" id="home">
-
-
-<!-- HERO -->
-
-<section class="hero">
-
-    <div class="hero-overlay"></div>
-
-    <div class="container hero-content">
-
-        <span class="eyebrow">
-            NATURAL • FRESH • TRUSTED
-        </span>
-
-        <h1>
-            Freshness Delivered
-            <br>
-            <span>To Your Door</span>
-        </h1>
-
-        <p>
-            Fresh groceries, organic foods,
-            premium spices and natural products
-            for your family.
-        </p>
-
-        <a href="#shop" class="primary-button">
-
-            Shop Now
-
-            <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
+      <div class="hero-features">
+        <div><strong>100%</strong><small>Fresh</small></div>
+        <div><strong>20+</strong><small>Products</small></div>
+        <div><strong>24/7</strong><small>Support</small></div>
+      </div>
     </div>
 
-</section>
-
-
-
-<!-- FEATURES -->
-
-<section class="features">
-
-    <div class="container feature-grid">
-
-        <div class="feature">
-
-            <i class="fa-solid fa-truck-fast"></i>
-
-            <div>
-
-                <strong>
-                    Fast Delivery
-                </strong>
-
-                <small>
-                    Quick delivery to your doorstep
-                </small>
-
-            </div>
-
-        </div>
-
-
-        <div class="feature">
-
-            <i class="fa-solid fa-shield-halved"></i>
-
-            <div>
-
-                <strong>
-                    100% Authentic
-                </strong>
-
-                <small>
-                    Quality products guaranteed
-                </small>
-
-            </div>
-
-        </div>
-
-
-        <div class="feature">
-
-            <i class="fa-solid fa-headset"></i>
-
-            <div>
-
-                <strong>
-                    24/7 Support
-                </strong>
-
-                <small>
-                    We're always here for you
-                </small>
-
-            </div>
-
-        </div>
-
-
-        <div class="feature">
-
-            <i class="fa-solid fa-rotate-left"></i>
-
-            <div>
-
-                <strong>
-                    Easy Returns
-                </strong>
-
-                <small>
-                    Hassle-free return policy
-                </small>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- POPULAR CATEGORIES -->
-
-<section class="section" id="categories">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-
-                <span>
-                    SHOP BY CATEGORY
-                </span>
-
-                <h2>
-                    Popular Categories
-                </h2>
-
-            </div>
-
-            <a href="#categories-page">
-                View All →
-            </a>
-
-        </div>
-
-
-        <div class="category-grid">
-
-            <a href="#shop" class="category-card">
-
-                <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=85">
-
-                <h3>
-                    Honey & Organic
-                </h3>
-
-                <small>
-                    25+ Products
-                </small>
-
-            </a>
-
-
-            <a href="#shop" class="category-card">
-
-                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=85">
-
-                <h3>
-                    Rice & Grains
-                </h3>
-
-                <small>
-                    40+ Products
-                </small>
-
-            </a>
-
-
-            <a href="#shop" class="category-card">
-
-                <img src="https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&w=600&q=85">
-
-                <h3>
-                    Nuts & Dry Fruits
-                </h3>
-
-                <small>
-                    35+ Products
-                </small>
-
-            </a>
-
-
-            <a href="#shop" class="category-card">
-
-                <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=600&q=85">
-
-                <h3>
-                    Spices
-                </h3>
-
-                <small>
-                    50+ Products
-                </small>
-
-            </a>
-
-
-            <a href="#shop" class="category-card">
-
-                <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=85">
-
-                <h3>
-                    Cooking Oil
-                </h3>
-
-                <small>
-                    20+ Products
-                </small>
-
-            </a>
-
-
-            <a href="#shop" class="category-card">
-
-                <img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&w=600&q=85">
-
-                <h3>
-                    Tea & Coffee
-                </h3>
-
-                <small>
-                    30+ Products
-                </small>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- BEST SELLING -->
-
-<section class="section light-section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-
-                <span>
-                    OUR BEST PRODUCTS
-                </span>
-
-                <h2>
-                    Best Selling Products
-                </h2>
-
-            </div>
-
-            <a href="#shop">
-                View All →
-            </a>
-
-        </div>
-
-
-        <div
-            class="product-grid"
-            id="homeProducts"
-        ></div>
-
-    </div>
-
-</section>
-
-
-
-<!-- FLASH SALE -->
-
-<section class="sale-section" id="offers">
-
-    <div class="container sale-grid">
-
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=1000&q=85" alt="Fresh fruits">
+      <div class="floating-card">
+        <span>🍎</span>
         <div>
-
-            <span class="eyebrow">
-                LIMITED TIME OFFER
-            </span>
-
-            <h2>
-                Special Sale
-                <br>
-                Up To
-                <strong>40% OFF</strong>
-            </h2>
-
-            <p>
-                Grab your favorite products
-                before the offer ends.
-            </p>
-
-
-            <div class="countdown">
-
-                <div>
-                    <b id="days">02</b>
-                    <small>Days</small>
-                </div>
-
-                <div>
-                    <b id="hours">12</b>
-                    <small>Hours</small>
-                </div>
-
-                <div>
-                    <b id="minutes">45</b>
-                    <small>Minutes</small>
-                </div>
-
-                <div>
-                    <b id="seconds">20</b>
-                    <small>Seconds</small>
-                </div>
-
-            </div>
-
-
-            <a href="#shop" class="light-button">
-                Shop Offers
-            </a>
-
+          <b>Fresh & Organic</b>
+          <small>Picked with care</small>
         </div>
-
-
-        <img
-            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85"
-            alt="Fresh vegetables"
-        >
-
+      </div>
     </div>
 
+  </div>
 </section>
 
 
+<!-- ================= CATEGORIES ================= -->
+<section class="categories-section" id="categories">
+  <div class="container">
 
-<!-- NEW ARRIVALS -->
-
-<section class="section" id="new-arrivals">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-
-                <span>
-                    JUST ARRIVED
-                </span>
-
-                <h2>
-                    New Arrivals
-                </h2>
-
-            </div>
-
-            <a href="#shop">
-                View All →
-            </a>
-
-        </div>
-
-
-        <div
-            class="product-grid"
-            id="newProducts"
-        ></div>
-
+    <div class="section-heading">
+      <span>SHOP BY CATEGORY</span>
+      <h2>Fresh Fruit Categories</h2>
+      <p>Choose your favorite fruits from our collection</p>
     </div>
 
+    <div class="category-grid">
+      <button class="category-card" data-category="All">
+        <span>🍇</span><b>All Fruits</b><small>20 Products</small>
+      </button>
+      <button class="category-card" data-category="Mango">
+        <span>🥭</span><b>Mango</b><small>3 Products</small>
+      </button>
+      <button class="category-card" data-category="Orange">
+        <span>🍊</span><b>Orange</b><small>2 Products</small>
+      </button>
+      <button class="category-card" data-category="Pineapple">
+        <span>🍍</span><b>Pineapple</b><small>1 Product</small>
+      </button>
+      <button class="category-card" data-category="Banana">
+        <span>🍌</span><b>Banana</b><small>1 Product</small>
+      </button>
+      <button class="category-card" data-category="Other">
+        <span>🍎</span><b>Other Fruits</b><small>12 Products</small>
+      </button>
+    </div>
+
+  </div>
 </section>
 
 
+<!-- ================= FILTER ================= -->
+<section class="filter-section">
+  <div class="container">
 
-<!-- FEATURED -->
+    <div class="filter-box">
 
-<section class="featured-section">
-
-    <div class="container featured-grid">
-
-
-        <div class="featured-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1000&q=85"
-            >
-
-            <div>
-
-                <span>
-                    100% NATURAL
-                </span>
-
-                <h2>
-                    Organic Products
-                    <br>
-                    For Healthy Living
-                </h2>
-
-                <a href="#shop">
-                    Explore Now →
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="featured-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=85"
-            >
-
-            <div>
-
-                <span>
-                    FRESH EVERY DAY
-                </span>
-
-                <h2>
-                    Fresh Groceries
-                    <br>
-                    At Best Price
-                </h2>
-
-                <a href="#shop">
-                    Shop Fresh →
-                </a>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- WHY CHOOSE US -->
-
-<section class="section light-section">
-
-    <div class="container">
-
-        <div class="section-heading center-heading">
-
-            <div>
-
-                <span>
-                    WHY GHORER BAZAR
-                </span>
-
-                <h2>
-                    Why Choose Us?
-                </h2>
-
-            </div>
-
-        </div>
-
-
-        <div class="why-grid">
-
-            <div class="why-card">
-
-                <i class="fa-solid fa-leaf"></i>
-
-                <h3>
-                    Fresh & Natural
-                </h3>
-
-                <p>
-                    Fresh and natural products
-                    carefully selected for your family.
-                </p>
-
-            </div>
-
-
-            <div class="why-card">
-
-                <i class="fa-solid fa-certificate"></i>
-
-                <h3>
-                    Premium Quality
-                </h3>
-
-                <p>
-                    Every product goes through
-                    our quality checking process.
-                </p>
-
-            </div>
-
-
-            <div class="why-card">
-
-                <i class="fa-solid fa-truck"></i>
-
-                <h3>
-                    Fast Delivery
-                </h3>
-
-                <p>
-                    Get your favorite products
-                    delivered quickly to your home.
-                </p>
-
-            </div>
-
-
-            <div class="why-card">
-
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-
-                <h3>
-                    Best Prices
-                </h3>
-
-                <p>
-                    Competitive prices without
-                    compromising quality.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- REVIEWS -->
-
-<section class="section">
-
-    <div class="container">
-
-        <div class="section-heading center-heading">
-
-            <div>
-
-                <span>
-                    WHAT OUR CUSTOMERS SAY
-                </span>
-
-                <h2>
-                    Customer Reviews
-                </h2>
-
-            </div>
-
-        </div>
-
-
-        <div class="review-grid">
-
-
-            <div class="review-card">
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p>
-                    "The products are really fresh
-                    and the delivery was surprisingly
-                    fast. Highly recommended!"
-                </p>
-
-                <div class="review-user">
-
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg">
-
-                    <div>
-
-                        <b>
-                            Sarah Ahmed
-                        </b>
-
-                        <small>
-                            Verified Customer
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="review-card">
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p>
-                    "I regularly order organic honey,
-                    nuts and spices from Ghorer Bazar.
-                    Excellent quality."
-                </p>
-
-                <div class="review-user">
-
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
-
-                    <div>
-
-                        <b>
-                            Rahim Hasan
-                        </b>
-
-                        <small>
-                            Verified Customer
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="review-card">
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p>
-                    "Very easy shopping experience.
-                    Packaging is also good and products
-                    arrive fresh."
-                </p>
-
-                <div class="review-user">
-
-                    <img src="https://randomuser.me/api/portraits/women/68.jpg">
-
-                    <div>
-
-                        <b>
-                            Nusrat Jahan
-                        </b>
-
-                        <small>
-                            Verified Customer
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- BLOG -->
-
-<section class="section light-section" id="blog">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-
-                <span>
-                    FROM OUR BLOG
-                </span>
-
-                <h2>
-                    Latest Articles & Recipes
-                </h2>
-
-            </div>
-
-            <a href="#blog-page">
-                View All
-            </a>
-
-        </div>
-
-
-        <div class="blog-grid">
-
-
-            <article class="blog-card">
-
-                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=85">
-
-                <div>
-
-                    <span>
-                        HEALTH & FOOD
-                    </span>
-
-                    <h3>
-                        Simple Ways To Eat Healthier
-                        Every Day
-                    </h3>
-
-                    <p>
-                        Discover simple food habits
-                        that can improve your lifestyle.
-                    </p>
-
-                    <a href="#blog-page">
-                        Read More →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <article class="blog-card">
-
-                <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=85">
-
-                <div>
-
-                    <span>
-                        RECIPES
-                    </span>
-
-                    <h3>
-                        5 Delicious Recipes Using
-                        Natural Spices
-                    </h3>
-
-                    <p>
-                        Make delicious family meals
-                        using fresh natural ingredients.
-                    </p>
-
-                    <a href="#blog-page">
-                        Read More →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <article class="blog-card">
-
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85">
-
-                <div>
-
-                    <span>
-                        FOOD GUIDE
-                    </span>
-
-                    <h3>
-                        How To Choose Quality
-                        Grocery Products
-                    </h3>
-
-                    <p>
-                        Learn what to check before
-                        buying everyday grocery items.
-                    </p>
-
-                    <a href="#blog-page">
-                        Read More →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- NEWSLETTER -->
-
-<section class="newsletter">
-
-    <div class="container newsletter-inner">
-
+      <div class="filter-title">
+        <span>🔎</span>
         <div>
+          <h3>Find Your Favorite Fruit</h3>
+          <p>Search and filter products</p>
+        </div>
+      </div>
 
-            <span>
-                STAY UPDATED
-            </span>
+      <div class="filter-grid">
 
-            <h2>
-                Subscribe To Our Newsletter
-            </h2>
-
-            <p>
-                Get exclusive offers, new products
-                and useful food tips.
-            </p>
-
+        <div class="filter-field search-field">
+          <label>Product Search</label>
+          <input type="text" id="productSearch" placeholder="Search fruits...">
         </div>
 
-
-        <form id="newsletterForm">
-
-            <input
-                type="email"
-                placeholder="Enter your email address"
-                required
-            >
-
-            <button>
-                Subscribe
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-</section>
-
-
-
-<!-- ==================================================
-                     SHOP PAGE
-================================================== -->
-
-<section class="page" id="shop">
-
-    <div class="container page-header">
-
-        <span>
-            OUR STORE
-        </span>
-
-        <h1>
-            Shop All Products
-        </h1>
-
-        <p>
-            Browse fresh, natural and quality products.
-        </p>
-
-    </div>
-
-
-    <div class="container shop-layout">
-
-
-        <aside class="filters">
-
-            <h3>
-                Filter Products
-            </h3>
-
-
-            <label>
-                Category
-            </label>
-
-            <select id="categoryFilter">
-
-                <option value="all">
-                    All Categories
-                </option>
-
-                <option>
-                    Honey & Organic
-                </option>
-
-                <option>
-                    Rice & Grains
-                </option>
-
-                <option>
-                    Nuts & Dry Fruits
-                </option>
-
-                <option>
-                    Spices
-                </option>
-
-                <option>
-                    Cooking Oil
-                </option>
-
-                <option>
-                    Tea & Coffee
-                </option>
-
-            </select>
-
-
-            <label>
-                Sort By
-            </label>
-
-            <select id="sortFilter">
-
-                <option value="default">
-                    Default
-                </option>
-
-                <option value="low">
-                    Price: Low to High
-                </option>
-
-                <option value="high">
-                    Price: High to Low
-                </option>
-
-                <option value="rating">
-                    Top Rated
-                </option>
-
-            </select>
-
-
-            <button
-                class="primary-button full"
-                id="clearFilters"
-            >
-                Clear Filters
-            </button>
-
-        </aside>
-
-
-        <div>
-
-            <div class="shop-toolbar">
-
-                <b id="productResultText">
-                    Products
-                </b>
-
-                <span>
-                    Fresh products • Easy shopping
-                </span>
-
-            </div>
-
-
-            <div
-                class="product-grid"
-                id="shopProducts"
-            ></div>
-
+        <div class="filter-field">
+          <label>Category</label>
+          <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Mango">Mango</option>
+            <option value="Orange">Orange</option>
+            <option value="Pineapple">Pineapple</option>
+            <option value="Banana">Banana</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
 
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-                  CATEGORIES PAGE
-================================================== -->
-
-<section class="page" id="categories-page">
-
-    <div class="container page-header">
-
-        <span>
-            EXPLORE
-        </span>
-
-        <h1>
-            All Categories
-        </h1>
-
-        <p>
-            Choose a category and discover our products.
-        </p>
-
-    </div>
-
-
-    <div
-        class="container category-page-grid"
-        id="categoryPageGrid"
-    ></div>
-
-</section>
-
-
-
-<!-- ==================================================
-                   PRODUCT DETAILS
-================================================== -->
-
-<section class="page" id="product-page">
-
-    <div
-        class="container product-detail"
-        id="productDetail"
-    ></div>
-
-</section>
-
-
-
-<!-- ==================================================
-                       CART
-================================================== -->
-
-<section class="page" id="cart-page">
-
-    <div class="container page-header">
-
-        <span>
-            SHOPPING BAG
-        </span>
-
-        <h1>
-            My Cart
-        </h1>
-
-    </div>
-
-
-    <div class="container cart-page-layout">
-
-        <div id="cartPageItems"></div>
-
-
-        <div class="summary-card">
-
-            <h3>
-                Order Summary
-            </h3>
-
-            <div>
-
-                <span>
-                    Subtotal
-                </span>
-
-                <b id="pageSubtotal">
-                    ৳0
-                </b>
-
-            </div>
-
-
-            <div>
-
-                <span>
-                    Delivery
-                </span>
-
-                <b id="pageDelivery">
-                    ৳0
-                </b>
-
-            </div>
-
-
-            <hr>
-
-
-            <div class="grand-total">
-
-                <span>
-                    Total
-                </span>
-
-                <b id="pageTotal">
-                    ৳0
-                </b>
-
-            </div>
-
-
-            <a
-                href="#checkout"
-                class="primary-button full"
-            >
-                Proceed To Checkout
-            </a>
-
+        <div class="filter-field">
+          <label>Brand</label>
+          <select id="brandFilter">
+            <option value="All">All Brands</option>
+            <option value="Pahari Fresh">Pahari Fresh</option>
+            <option value="Pahari Premium">Pahari Premium</option>
+            <option value="Hill Harvest">Hill Harvest</option>
+            <option value="Nature Fresh">Nature Fresh</option>
+          </select>
         </div>
 
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-                     CHECKOUT
-================================================== -->
-
-<section class="page" id="checkout">
-
-    <div class="container page-header">
-
-        <span>
-            SECURE CHECKOUT
-        </span>
-
-        <h1>
-            Checkout
-        </h1>
-
-    </div>
-
-
-    <div class="container checkout-layout">
-
-
-        <form
-            class="checkout-form"
-            id="checkoutForm"
-        >
-
-            <h3>
-                Delivery Information
-            </h3>
-
-
-            <div class="form-grid">
-
-                <input
-                    required
-                    placeholder="Full Name"
-                >
-
-                <input
-                    required
-                    type="tel"
-                    placeholder="Phone Number"
-                >
-
-                <input
-                    required
-                    type="email"
-                    placeholder="Email"
-                >
-
-                <input
-                    required
-                    placeholder="City"
-                >
-
-            </div>
-
-
-            <textarea
-                required
-                placeholder="Full Delivery Address"
-            ></textarea>
-
-
-            <h3>
-                Payment Method
-            </h3>
-
-
-            <label class="payment-option">
-
-                <input
-                    type="radio"
-                    name="payment"
-                    value="cod"
-                    checked
-                >
-
-                Cash on Delivery
-
-            </label>
-
-
-            <label class="payment-option">
-
-                <input
-                    type="radio"
-                    name="payment"
-                    value="bkash"
-                >
-
-                bKash / Mobile Payment
-
-            </label>
-
-
-            <button
-                class="primary-button"
-                type="submit"
-            >
-                Place Order
-            </button>
-
-        </form>
-
-
-        <div class="summary-card">
-
-            <h3>
-                Your Order
-            </h3>
-
-            <div id="checkoutItems"></div>
-
-            <hr>
-
-            <div class="grand-total">
-
-                <span>
-                    Total
-                </span>
-
-                <b id="checkoutTotal">
-                    ৳0
-                </b>
-
-            </div>
-
+        <div class="filter-field">
+          <label>Rating</label>
+          <select id="ratingFilter">
+            <option value="0">All Ratings</option>
+            <option value="4">4★ & Above</option>
+            <option value="4.5">4.5★ & Above</option>
+        </select>
         </div>
 
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-                     WISHLIST
-================================================== -->
-
-<section class="page" id="wishlist-page">
-
-    <div class="container page-header">
-
-        <span>
-            SAVED PRODUCTS
-        </span>
-
-        <h1>
-            My Wishlist
-        </h1>
-
-    </div>
-
-
-    <div
-        class="container product-grid"
-        id="wishlistProducts"
-    ></div>
-
-</section>
-
-
-
-<!-- ==================================================
-                     ACCOUNT
-================================================== -->
-
-<section class="page" id="account">
-
-    <div class="container page-header">
-
-        <span>
-            MY ACCOUNT
-        </span>
-
-        <h1>
-            Account
-        </h1>
-
-    </div>
-
-
-    <div class="container account-grid">
-
-
-        <div class="account-card">
-
-            <i class="fa-regular fa-user"></i>
-
-            <h3>
-                Profile
-            </h3>
-
-            <p>
-                Manage your name, email and
-                contact information.
-            </p>
-
-            <button class="outline-button">
-                Edit Profile
-            </button>
-
+        <div class="filter-field">
+          <label>Min Price</label>
+          <input type="number" id="minPrice" placeholder="৳ Min">
         </div>
 
-
-        <div class="account-card">
-
-            <i class="fa-solid fa-box"></i>
-
-            <h3>
-                My Orders
-            </h3>
-
-            <p>
-                View previous orders and
-                order status.
-            </p>
-
-            <a
-                href="#tracking"
-                class="outline-button"
-            >
-                Track Order
-            </a>
-
+        <div class="filter-field">
+          <label>Max Price</label>
+          <input type="number" id="maxPrice" placeholder="৳ Max">
         </div>
 
-
-        <div class="account-card">
-
-            <i class="fa-regular fa-heart"></i>
-
-            <h3>
-                Wishlist
-            </h3>
-
-            <p>
-                View products you saved
-                for later.
-            </p>
-
-            <a
-                href="#wishlist-page"
-                class="outline-button"
-            >
-                View Wishlist
-            </a>
-
+        <div class="filter-field">
+          <label>Sort By</label>
+          <select id="sortFilter">
+            <option value="default">Default</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="popular">Popularity</option>
+            <option value="newest">Newest</option>
+          </select>
         </div>
 
-
-        <div class="account-card">
-
-            <i class="fa-solid fa-location-dot"></i>
-
-            <h3>
-                Addresses
-            </h3>
-
-            <p>
-                Save and manage your
-                delivery addresses.
-            </p>
-
-            <button class="outline-button">
-                Manage
-            </button>
-
+        <div class="filter-buttons">
+          <button id="applyFilters" class="btn primary-btn">Apply</button>
+          <button id="resetFilters" class="btn reset-btn">Reset</button>
         </div>
 
+      </div>
+
+      <div class="filter-result">
+        <span id="resultCount">20 products found</span>
+        <span id="activeFilters"></span>
+      </div>
 
     </div>
 
+  </div>
 </section>
 
 
+<!-- ================= PRODUCTS ================= -->
+<section class="products-section" id="products">
+  <div class="container">
 
-<!-- ==================================================
-                       LOGIN
-================================================== -->
+    <div class="section-heading">
+      <span>OUR COLLECTION</span>
+      <h2>Fresh & Popular Products</h2>
+      <p>Choose from our carefully selected fresh fruits</p>
+    </div>
 
-<section class="page" id="login">
+    <div class="products-grid" id="productsGrid">
 
-    <div class="auth-box">
-
-        <div class="logo-name">
-            Ghorer<span>Bazar</span>
+      <!-- 1 -->
+      <article class="product-card" data-id="1">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1605027990121-cbae9c2b3b8a?auto=format&fit=crop&w=600&q=80" alt="Pahari Mango">
+          <span class="badge">BEST SELLER</span>
+          <button class="wishlist-btn" data-wishlist="1">♡</button>
         </div>
-
-        <h1>
-            Login
-        </h1>
-
-        <p>
-            Welcome back to your account.
-        </p>
-
-
-        <form id="loginForm">
-
-            <input
-                type="email"
-                required
-                placeholder="Email Address"
-            >
-
-            <input
-                type="password"
-                required
-                placeholder="Password"
-            >
-
-            <button
-                class="primary-button full"
-            >
-                Login
-            </button>
-
-        </form>
-
-
-        <small>
-            Don't have an account?
-            <a href="#register">
-                Create one
-            </a>
-        </small>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-                     REGISTER
-================================================== -->
-
-<section class="page" id="register">
-
-    <div class="auth-box">
-
-        <div class="logo-name">
-            Ghorer<span>Bazar</span>
+        <div class="product-info">
+          <span class="product-category">Mango</span>
+          <h3>Pahari Mango</h3>
+          <div class="rating">★★★★★ <small>(128)</small></div>
+          <div class="price"><strong>৳450</strong><del>৳520</del></div>
+          <button class="add-to-cart" data-id="1">🛒 Add to Cart</button>
         </div>
-
-        <h1>
-            Create Account
-        </h1>
-
-        <p>
-            Join Ghorer Bazar today.
-        </p>
-
-
-        <form id="registerForm">
-
-            <input
-                required
-                placeholder="Full Name"
-            >
-
-            <input
-                type="email"
-                required
-                placeholder="Email Address"
-            >
-
-            <input
-                type="password"
-                required
-                placeholder="Password"
-            >
-
-            <input
-                type="password"
-                required
-                placeholder="Confirm Password"
-            >
-
-            <button class="primary-button full">
-                Register
-            </button>
-
-        </form>
-
-
-        <small>
-
-            Already have an account?
-
-            <a href="#login">
-                Login
-            </a>
-
-        </small>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-                   ORDER TRACKING
-================================================== -->
-
-<section class="page" id="tracking">
-
-    <div class="container page-header">
-
-        <span>
-            ORDER SERVICE
-        </span>
-
-        <h1>
-            Track Your Order
-        </h1>
-
-        <p>
-            Enter your order number to check delivery status.
-        </p>
-
-    </div>
-
-
-    <div class="tracking-box">
-
-        <input
-            id="trackingInput"
-            placeholder="Example: GB-2026-1001"
-        >
-
-        <button
-            class="primary-button"
-            id="trackingButton"
-        >
-            Track Order
-        </button>
-
-
-        <div id="trackingResult"></div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-                       ABOUT
-================================================== -->
-
-<section class="page" id="about">
-
-    <div class="container about-grid">
-
-        <img
-            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85"
-            alt="Fresh market"
-        >
-
-
-        <div>
-
-            <span>
-                ABOUT GHORER BAZAR
-            </span>
-
-            <h1>
-                Fresh Food.
-                Honest Quality.
-                Happy Family.
-            </h1>
-
-            <p>
-                Ghorer Bazar is a modern online
-                grocery concept focused on fresh,
-                natural and trusted everyday products.
-            </p>
-
-            <p>
-                We connect customers with carefully
-                selected groceries and make shopping
-                simple, convenient and reliable.
-            </p>
-
-
-            <div class="stats">
-
-                <div>
-
-                    <b>
-                        10K+
-                    </b>
-
-                    <small>
-                        Customers
-                    </small>
-
-                </div>
-
-
-                <div>
-
-                    <b>
-                        500+
-                    </b>
-
-                    <small>
-                        Products
-                    </small>
-
-                </div>
-
-
-                <div>
-
-                    <b>
-                        24/7
-                    </b>
-
-                    <small>
-                        Support
-                    </small>
-
-                </div>
-
-            </div>
-
+      </article>
+
+      <!-- 2 -->
+      <article class="product-card" data-id="2">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80" alt="Fresh Alphonso Mango">
+          <span class="badge">PREMIUM</span>
+          <button class="wishlist-btn" data-wishlist="2">♡</button>
         </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-                       BLOG PAGE
-================================================== -->
-
-<section class="page" id="blog-page">
-
-    <div class="container page-header">
-
-        <span>
-            GHORER BAZAR JOURNAL
-        </span>
-
-        <h1>
-            Blog & Recipes
-        </h1>
-
-    </div>
-
-
-    <div class="container blog-grid">
-
-
-        <article class="blog-card">
-
-            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=85">
-
-            <div>
-
-                <span>
-                    HEALTH
-                </span>
-
-                <h3>
-                    Simple Ways To Eat Healthier
-                    Every Day
-                </h3>
-
-                <p>
-                    Practical ideas for better
-                    everyday meals.
-                </p>
-
-                <a href="#">
-                    Read Article →
-                </a>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="blog-card">
-
-            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=85">
-
-            <div>
-
-                <span>
-                    RECIPES
-                </span>
-
-                <h3>
-                    Natural Spice Recipes
-                    For Family Meals
-                </h3>
-
-                <p>
-                    Easy recipes packed with flavor.
-                </p>
-
-                <a href="#">
-                    Read Article →
-                </a>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="blog-card">
-
-            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=85">
-
-            <div>
-
-                <span>
-                    FOOD GUIDE
-                </span>
-
-                <h3>
-                    How To Build A Healthy
-                    Grocery Basket
-                </h3>
-
-                <p>
-                    What to look for when shopping.
-                </p>
-
-                <a href="#">
-                    Read Article →
-                </a>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-                      CONTACT
-================================================== -->
-
-<section class="page" id="contact">
-
-    <div class="container page-header">
-
-        <span>
-            GET IN TOUCH
-        </span>
-
-        <h1>
-            Contact Us
-        </h1>
-
-        <p>
-            We're happy to help.
-        </p>
-
-    </div>
-
-
-    <div class="container contact-grid">
-
-
-        <div class="contact-info">
-
-
-            <div>
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                <h3>
-                    Address
-                </h3>
-
-                <p>
-                    Dhaka, Bangladesh
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <i class="fa-solid fa-phone"></i>
-
-                <h3>
-                    Phone
-                </h3>
-
-                <p>
-                    +880 1234-567890
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <h3>
-                    Email
-                </h3>
-
-                <p>
-                    support@ghorerbazar.com
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <i class="fa-solid fa-clock"></i>
-
-                <h3>
-                    Opening Hours
-                </h3>
-
-                <p>
-                    Sat - Thu: 9AM - 10PM
-                </p>
-
-            </div>
-
-
+        <div class="product-info">
+          <span class="product-category">Mango</span>
+          <h3>Fresh Alphonso Mango</h3>
+          <div class="rating">★★★★★ <small>(96)</small></div>
+          <div class="price"><strong>৳650</strong><del>৳750</del></div>
+          <button class="add-to-cart" data-id="2">🛒 Add to Cart</button>
         </div>
+      </article>
 
+      <!-- 3 -->
+      <article class="product-card" data-id="3">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1591073113125-e46713c829ed?auto=format&fit=crop&w=600&q=80" alt="Green Hill Mango">
+          <span class="badge">FRESH</span>
+          <button class="wishlist-btn" data-wishlist="3">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Mango</span>
+          <h3>Green Hill Mango</h3>
+          <div class="rating">★★★★☆ <small>(74)</small></div>
+          <div class="price"><strong>৳380</strong><del>৳450</del></div>
+          <button class="add-to-cart" data-id="3">🛒 Add to Cart</button>
+        </div>
+      </article>
 
-        <form
-            class="contact-form"
-            id="contactForm"
-        >
+      <!-- 4 -->
+      <article class="product-card" data-id="4">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=600&q=80" alt="Juicy Orange">
+          <span class="badge">FRESH</span>
+          <button class="wishlist-btn" data-wishlist="4">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Orange</span>
+          <h3>Juicy Orange</h3>
+          <div class="rating">★★★★★ <small>(115)</small></div>
+          <div class="price"><strong>৳320</strong><del>৳390</del></div>
+          <button class="add-to-cart" data-id="4">🛒 Add to Cart</button>
+        </div>
+      </article>
 
-            <input
-                required
-                placeholder="Your Name"
-            >
+      <!-- 5 -->
+      <article class="product-card" data-id="5">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&w=600&q=80" alt="Mountain Orange">
+          <span class="badge">POPULAR</span>
+          <button class="wishlist-btn" data-wishlist="5">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Orange</span>
+          <h3>Mountain Orange</h3>
+          <div class="rating">★★★★☆ <small>(68)</small></div>
+          <div class="price"><strong>৳350</strong><del>৳420</del></div>
+          <button class="add-to-cart" data-id="5">🛒 Add to Cart</button>
+        </div>
+      </article>
 
-            <input
-                required
-                type="email"
-                placeholder="Your Email"
-            >
+      <!-- 6 -->
+      <article class="product-card" data-id="6">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=600&q=80" alt="Sweet Pineapple">
+          <span class="badge">SALE</span>
+          <button class="wishlist-btn" data-wishlist="6">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Pineapple</span>
+          <h3>Sweet Pineapple</h3>
+          <div class="rating">★★★★★ <small>(103)</small></div>
+          <div class="price"><strong>৳280</strong><del>৳350</del></div>
+          <button class="add-to-cart" data-id="6">🛒 Add to Cart</button>
+        </div>
+      </article>
 
-            <input
-                placeholder="Subject"
-            >
+      <!-- 7 -->
+      <article class="product-card" data-id="7">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=600&q=80" alt="Hill Pineapple">
+          <span class="badge">FRESH</span>
+          <button class="wishlist-btn" data-wishlist="7">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Pineapple</span>
+          <h3>Hill Pineapple</h3>
+          <div class="rating">★★★★★ <small>(87)</small></div>
+          <div class="price"><strong>৳300</strong><del>৳360</del></div>
+          <button class="add-to-cart" data-id="7">🛒 Add to Cart</button>
+        </div>
+      </article>
 
-            <textarea
-                required
-                placeholder="Your Message"
-            ></textarea>
+      <!-- 8 -->
+      <article class="product-card" data-id="8">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80" alt="Organic Banana">
+          <span class="badge">ORGANIC</span>
+          <button class="wishlist-btn" data-wishlist="8">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Banana</span>
+          <h3>Organic Banana</h3>
+          <div class="rating">★★★★★ <small>(142)</small></div>
+          <div class="price"><strong>৳180</strong><del>৳220</del></div>
+          <button class="add-to-cart" data-id="8">🛒 Add to Cart</button>
+        </div>
+      </article>
 
-            <button class="primary-button">
-                Send Message
-            </button>
+      <!-- 9 -->
+      <article class="product-card" data-id="9">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=80" alt="Fresh Red Apple">
+          <span class="badge">POPULAR</span>
+          <button class="wishlist-btn" data-wishlist="9">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Fresh Red Apple</h3>
+          <div class="rating">★★★★★ <small>(124)</small></div>
+          <div class="price"><strong>৳420</strong><del>৳500</del></div>
+          <button class="add-to-cart" data-id="9">🛒 Add to Cart</button>
+        </div>
+      </article>
 
-        </form>
+      <!-- 10 -->
+      <article class="product-card" data-id="10">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?auto=format&fit=crop&w=600&q=80" alt="Green Apple">
+          <span class="badge">FRESH</span>
+          <button class="wishlist-btn" data-wishlist="10">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Green Apple</h3>
+          <div class="rating">★★★★☆ <small>(72)</small></div>
+          <div class="price"><strong>৳390</strong><del>৳460</del></div>
+          <button class="add-to-cart" data-id="10">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="product-card" data-id="11">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?auto=format&fit=crop&w=600&q=80" alt="Fresh Papaya">
+          <span class="badge">FRESH</span>
+          <button class="wishlist-btn" data-wishlist="11">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Fresh Papaya</h3>
+          <div class="rating">★★★★★ <small>(83)</small></div>
+          <div class="price"><strong>৳240</strong><del>৳300</del></div>
+          <button class="add-to-cart" data-id="11">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="product-card" data-id="12">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1563114773-84221bd62daa?auto=format&fit=crop&w=600&q=80" alt="Sweet Watermelon">
+          <span class="badge">POPULAR</span>
+          <button class="wishlist-btn" data-wishlist="12">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Sweet Watermelon</h3>
+          <div class="rating">★★★★★ <small>(139)</small></div>
+          <div class="price"><strong>৳280</strong><del>৳340</del></div>
+          <button class="add-to-cart" data-id="12">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="product-card" data-id="13">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1536511132770-e5058c7e8c46?auto=format&fit=crop&w=600&q=80" alt="Dragon Fruit">
+          <span class="badge">PREMIUM</span>
+          <button class="wishlist-btn" data-wishlist="13">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Fresh Dragon Fruit</h3>
+          <div class="rating">★★★★★ <small>(91)</small></div>
+          <div class="price"><strong>৳550</strong><del>৳650</del></div>
+          <button class="add-to-cart" data-id="13">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="product-card" data-id="14">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1536511132770-e5058c7e8c46?auto=format&fit=crop&w=600&q=80" alt="Fresh Guava">
+          <span class="badge">FRESH</span>
+          <button class="wishlist-btn" data-wishlist="14">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Fresh Guava</h3>
+          <div class="rating">★★★★☆ <small>(77)</small></div>
+          <div class="price"><strong>৳220</strong><del>৳280</del></div>
+          <button class="add-to-cart" data-id="14">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="product-card" data-id="15">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80" alt="Pomegranate">
+          <span class="badge">PREMIUM</span>
+          <button class="wishlist-btn" data-wishlist="15">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Pomegranate</h3>
+          <div class="rating">★★★★★ <small>(86)</small></div>
+          <div class="price"><strong>৳480</strong><del>৳560</del></div>
+          <button class="add-to-cart" data-id="15">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="product-card" data-id="16">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=600&q=80" alt="Fresh Grapes">
+          <span class="badge">FRESH</span>
+          <button class="wishlist-btn" data-wishlist="16">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Fresh Grapes</h3>
+          <div class="rating">★★★★★ <small>(112)</small></div>
+          <div class="price"><strong>৳360</strong><del>৳430</del></div>
+          <button class="add-to-cart" data-id="16">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="product-card" data-id="17">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80" alt="Fresh Strawberry">
+          <span class="badge">PREMIUM</span>
+          <button class="wishlist-btn" data-wishlist="17">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Fresh Strawberry</h3>
+          <div class="rating">★★★★★ <small>(98)</small></div>
+          <div class="price"><strong>৳620</strong><del>৳720</del></div>
+          <button class="add-to-cart" data-id="17">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 18 -->
+      <article class="product-card" data-id="18">
+        <div class="product-image">
+          <img src="https://psee.io/9llz6z" alt="Fresh Coconut">
+          <span class="badge">FRESH</span>
+          <button class="wishlist-btn" data-wishlist="18">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Fresh Coconut</h3>
+          <div class="rating">★★★★☆ <small>(64)</small></div>
+          <div class="price"><strong>৳190</strong><del>৳240</del></div>
+          <button class="add-to-cart" data-id="18">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 19 -->
+      <article class="product-card" data-id="19">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&w=600&q=80" alt="Fresh Lychee">
+          <span class="badge">SEASONAL</span>
+          <button class="wishlist-btn" data-wishlist="19">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Fresh Lychee</h3>
+          <div class="rating">★★★★★ <small>(106)</small></div>
+          <div class="price"><strong>৳520</strong><del>৳600</del></div>
+          <button class="add-to-cart" data-id="19">🛒 Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 20 -->
+      <article class="product-card" data-id="20">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=600&q=80" alt="Cherry fruit">
+          <span class="badge">POPULAR</span>
+          <button class="wishlist-btn" data-wishlist="20">♡</button>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Other</span>
+          <h3>Charry fruit</h3>
+          <div class="rating">★★★★★ <small>(131)</small></div>
+          <div class="price"><strong>৳350</strong><del>৳430</del></div>
+          <button class="add-to-cart" data-id="20">🛒 Add to Cart</button>
+        </div>
+      </article>
 
     </div>
 
+    <div id="noProducts" class="no-products">
+      <div>🍃</div>
+      <h3>No products found</h3>
+      <p>Try changing your search or filter.</p>
+    </div>
+
+  </div>
 </section>
 
 
-</main>
+<!-- ================= OFFER ================= -->
+<section class="offer-section">
+  <div class="container offer-box">
+    <div>
+      <span>🔥 LIMITED TIME OFFER</span>
+      <h2>Get 10% OFF Your First Order</h2>
+      <p>Use coupon code <b>PAHARI10</b> at checkout.</p>
+    </div>
+    <button class="btn white-btn" onclick="openShoppingCart()">Shop Now →</button>
+  </div>
+</section>
 
 
+<!-- ================= REVIEWS ================= -->
+<section class="reviews-section">
+  <div class="container">
 
-<!-- ==================================================
-                       FOOTER
-================================================== -->
+    <div class="section-heading">
+      <span>CUSTOMER REVIEWS</span>
+      <h2>What Our Customers Say</h2>
+    </div>
 
+    <div class="review-grid">
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>“The mangoes were really fresh and delicious. Delivery was also very fast.”</p>
+        <div class="review-user">
+          <div>👨</div>
+          <span><b>Rahim Ahmed</b><small>Dhaka</small></span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>“I loved the quality of the hill fruits. I will definitely order again.”</p>
+        <div class="review-user">
+          <div>👩</div>
+          <span><b>Nusrat Jahan</b><small>Chattogram</small></span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>“Good packaging, fresh fruits and reasonable price. Highly recommended.”</p>
+        <div class="review-user">
+          <div>👨</div>
+          <span><b>Sakib Hasan</b><small>Khagrachari</small></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section class="about-section" id="about">
+  <div class="container about-grid">
+
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=900&q=80" alt="Fresh fruits">
+    </div>
+
+    <div class="about-text">
+      <span>ABOUT US</span>
+      <h2>Freshness From The Hills To Your Home</h2>
+      <p>
+        Pahari Fruits Shop brings fresh and delicious fruits from
+        the beautiful hills of Bangladesh directly to customers.
+      </p>
+      <p>
+        We focus on freshness, quality, careful packaging and
+        reliable delivery so that every customer gets the best experience.
+      </p>
+
+      <div class="about-points">
+        <div>✓ Fresh Products</div>
+        <div>✓ Quality Checked</div>
+        <div>✓ Secure Packaging</div>
+        <div>✓ Fast Delivery</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-section" id="contact">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>GET IN TOUCH</span>
+      <h2>Contact Us</h2>
+      <p>We're always happy to hear from you.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <span>📞</span>
+        <h3>Phone</h3>
+        <p>Call us for assistance</p>
+        <a href="tel:+8801000000000">+880 1000-000000</a>
+      </div>
+
+      <div class="contact-card">
+        <span>💬</span>
+        <h3>WhatsApp</h3>
+        <p>Chat with us</p>
+        <a href="https://wa.me/8801000000000" target="_blank">WhatsApp Chat</a>
+      </div>
+
+      <div class="contact-card">
+        <span>✉️</span>
+        <h3>Email</h3>
+        <p>Send us an email</p>
+        <a href="mailto:info@paharifruits.com">info@paharifruits.com</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FAQ ================= -->
+<section class="faq-section" id="faq">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>HELP CENTER</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button>How can I place an order? <span>+</span></button>
+        <div class="faq-answer">
+          Add your favorite products to cart, go to checkout, provide delivery information and place your order.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button>Do you provide Cash on Delivery? <span>+</span></button>
+        <div class="faq-answer">
+          Yes, Cash on Delivery is available for eligible delivery locations.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button>How much is delivery charge? <span>+</span></button>
+        <div class="faq-answer">
+          Standard delivery charge is ৳60. Delivery becomes free when your subtotal reaches ৳2,000.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button>Can I cancel my order? <span>+</span></button>
+        <div class="faq-answer">
+          Orders can be cancelled before they are shipped. Contact customer support for assistance.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button>How can I contact support? <span>+</span></button>
+        <div class="faq-answer">
+          You can contact us by phone, WhatsApp or live chat.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
+  <div class="container footer-grid">
 
-    <div class="container footer-grid">
-
-
-        <div>
-
-            <div class="footer-brand">
-                Ghorer<span>Bazar</span>
-            </div>
-
-            <p>
-                Your trusted online grocery store
-                for fresh, natural and quality products.
-            </p>
-
-
-            <div class="socials">
-
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-        <div>
-
-            <h3>
-                Quick Links
-            </h3>
-
-            <a href="#home">
-                Home
-            </a>
-
-            <a href="#shop">
-                Shop
-            </a>
-
-            <a href="#categories-page">
-                Categories
-            </a>
-
-            <a href="#offers">
-                Offers
-            </a>
-
-            <a href="#new-arrivals">
-                New Arrivals
-            </a>
-
-        </div>
-
-
-
-        <div>
-
-            <h3>
-                Customer Service
-            </h3>
-
-            <a href="#account">
-                My Account
-            </a>
-
-            <a href="#tracking">
-                Order Tracking
-            </a>
-
-            <a href="#wishlist-page">
-                Wishlist
-            </a>
-
-            <a href="#contact">
-                Contact Us
-            </a>
-
-            <a href="#">
-                Privacy Policy
-            </a>
-
-        </div>
-
-
-
-        <div>
-
-            <h3>
-                Contact Us
-            </h3>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Dhaka, Bangladesh
-            </p>
-
-            <p>
-                <i class="fa-solid fa-phone"></i>
-                +880 1234-567890
-            </p>
-
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                support@ghorerbazar.com
-            </p>
-
-        </div>
-
-
+    <div>
+      <a href="#home" class="logo footer-logo">
+        🍊 Pahari <b>Fruits</b>
+      </a>
+      <p>Fresh fruits from the hills to your home.</p>
+      <div class="socials">
+        <a href="#">f</a>
+        <a href="#">in</a>
+        <a href="#">▶</a>
+      </div>
     </div>
 
-
-    <div class="footer-bottom">
-
-        <div class="container">
-
-            <span>
-                © 2026 Ghorer Bazar.
-                All Rights Reserved.
-            </span>
-
-            <span>
-                Secure Payment • Fast Delivery • Trusted Quality
-            </span>
-
-        </div>
-
+    <div>
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
     </div>
 
+    <div>
+      <h3>Customer Service</h3>
+      <a href="#faq">FAQ</a>
+      <a href="#" onclick="openCustomerSupport()">Support</a>
+      <a href="#" onclick="openImportantPage('shipping')">Shipping Policy</a>
+      <a href="#" onclick="openImportantPage('return')">Return & Refund</a>
+    </div>
+
+    <div>
+      <h3>Information</h3>
+      <a href="#" onclick="openImportantPage('privacy')">Privacy Policy</a>
+      <a href="#" onclick="openImportantPage('terms')">Terms & Conditions</a>
+      <a href="#" onclick="openImportantPage('about')">About Us</a>
+      <a href="#" onclick="openAdminPanel()">Admin Panel</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Pahari Fruits Shop. All Rights Reserved.</p>
+  </div>
 </footer>
 
 
+<!-- ================= PRODUCT DETAILS MODAL ================= -->
+<div class="modal-overlay" id="productModal">
+  <div class="product-modal">
 
-<!-- CART DRAWER -->
+    <button class="modal-close" onclick="closeProductModal()">×</button>
 
-<div
-    class="overlay"
-    id="overlay"
-></div>
+    <div class="detail-grid">
 
+      <div class="detail-gallery">
+        <img id="detailMainImage" src="" alt="">
+        <div id="detailThumbnails" class="detail-thumbnails"></div>
+      </div>
 
-<aside
-    class="cart-drawer"
-    id="cartDrawer"
->
+      <div class="detail-info">
+        <span id="detailCategory" class="detail-category"></span>
+        <h2 id="detailName"></h2>
 
-    <div class="drawer-head">
+        <div id="detailRating" class="detail-rating"></div>
 
-        <h2>
-            Your Cart
-        </h2>
+        <div class="detail-price">
+          <strong id="detailPrice"></strong>
+          <del id="detailOldPrice"></del>
+        </div>
 
-        <button id="closeCart">
+        <p id="detailDescription"></p>
 
-            <i class="fa-solid fa-xmark"></i>
+        <div class="specifications">
+          <h3>Specifications</h3>
+          <div id="detailSpecs"></div>
+        </div>
 
-        </button>
+        <div class="stock-info" id="detailStock"></div>
+        <div class="sku" id="detailSKU"></div>
+
+        <div class="quantity-row">
+          <span>Quantity</span>
+          <div class="quantity-control">
+            <button onclick="changeDetailQuantity(-1)">−</button>
+            <span id="detailQuantity">1</span>
+            <button onclick="changeDetailQuantity(1)">+</button>
+          </div>
+        </div>
+
+        <div class="detail-buttons">
+          <button id="detailAddCart" class="btn primary-btn">🛒 Add to Cart</button>
+          <button id="detailBuyNow" class="btn buy-btn">Buy Now</button>
+          <button id="detailWishlist" class="wishlist-large">♡</button>
+        </div>
+
+      </div>
 
     </div>
 
-
-    <div
-        class="drawer-body"
-        id="drawerItems"
-    ></div>
+  </div>
+</div>
 
 
-    <div class="drawer-foot">
+<!-- ================= SHOPPING CART ================= -->
+<div class="cart-overlay" id="cartOverlay">
 
-        <div>
+  <aside class="shopping-cart-panel">
 
-            <span>
-                Total
-            </span>
+    <div class="cart-header">
+      <div>
+        <h2>🛒 Your Cart</h2>
+        <span id="cartItemText">0 items</span>
+      </div>
+      <button onclick="closeShoppingCart()">×</button>
+    </div>
 
-            <b id="drawerTotal">
-                ৳0
-            </b>
+    <div id="cartProducts" class="cart-products"></div>
+
+    <div id="emptyCart" class="empty-cart">
+      <div>🛒</div>
+      <h3>Your cart is empty</h3>
+      <p>Add some fresh fruits to your cart.</p>
+      <button class="btn primary-btn" onclick="closeShoppingCart()">Continue Shopping</button>
+    </div>
+
+    <div id="cartSummary" class="cart-summary">
+
+      <div class="coupon-box">
+        <input id="couponInput" placeholder="Coupon code">
+        <button id="applyCoupon">Apply</button>
+        <p id="couponMessage"></p>
+      </div>
+
+      <div class="summary-line">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">৳0</strong>
+      </div>
+
+      <div class="summary-line">
+        <span>Delivery</span>
+        <strong id="cartDelivery">৳60</strong>
+      </div>
+
+      <div class="summary-line discount-line" id="discountRow">
+        <span>Discount</span>
+        <strong id="cartDiscount">-৳0</strong>
+      </div>
+
+      <div class="summary-total">
+        <span>Total</span>
+        <strong id="cartTotal">৳0</strong>
+      </div>
+
+      <button id="checkoutCartBtn" class="checkout-btn">Proceed to Checkout →</button>
+
+    </div>
+
+  </aside>
+
+</div>
+
+
+<!-- ================= CHECKOUT ================= -->
+<div class="modal-overlay" id="checkoutModal">
+
+  <div class="checkout-modal">
+
+    <button class="modal-close" onclick="closeCheckout()">×</button>
+
+    <div class="checkout-header">
+      <span>SECURE CHECKOUT</span>
+      <h2>Complete Your Order</h2>
+    </div>
+
+    <form id="checkoutForm">
+
+      <div class="checkout-grid">
+
+        <div class="checkout-form">
+
+          <h3>📍 Delivery Information</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input id="customerName" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input id="customerPhone" type="tel" required placeholder="01XXXXXXXXX">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input id="customerEmail" type="email" placeholder="your@email.com">
+          </div>
+
+          <div class="form-group">
+            <label>Delivery Address *</label>
+            <textarea id="customerAddress" required rows="4" placeholder="House, road, area, upazila, district"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Delivery Area *</label>
+            <select id="deliveryArea" required>
+              <option value="">Select Area</option>
+              <option>Inside City</option>
+              <option>Outside City</option>
+              <option>Other District</option>
+            </select>
+          </div>
+
+          <h3>💳 Payment Method</h3>
+
+          <div class="payment-options">
+
+            <label class="payment-option">
+              <input type="radio" name="payment" value="cod" checked>
+              <span>💵</span>
+              <div>
+                <b>Cash on Delivery</b>
+                <small>Pay when your order arrives</small>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment" value="mobile">
+              <span>📱</span>
+              <div>
+                <b>Mobile Banking</b>
+                <small>bKash / Nagad / Rocket</small>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment" value="card">
+              <span>💳</span>
+              <div>
+                <b>Card Payment</b>
+                <small>Visa / Mastercard</small>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment" value="online">
+              <span>🌐</span>
+              <div>
+                <b>Online Payment Gateway</b>
+                <small>Secure online payment</small>
+              </div>
+            </label>
+
+          </div>
 
         </div>
 
+        <div class="checkout-summary">
 
-        <a
-            href="#checkout"
-            class="primary-button full"
-        >
-            Checkout
-        </a>
+          <h3>Order Summary</h3>
+
+          <div id="checkoutProducts"></div>
+
+          <div class="summary-line">
+            <span>Subtotal</span>
+            <strong id="checkoutSubtotal">৳0</strong>
+          </div>
+
+          <div class="summary-line">
+            <span>Delivery</span>
+            <strong id="checkoutDelivery">৳60</strong>
+          </div>
+
+          <div class="summary-line">
+            <span>Discount</span>
+            <strong id="checkoutDiscount">-৳0</strong>
+          </div>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <strong id="checkoutTotal">৳0</strong>
+          </div>
+
+          <div class="secure-payment">
+            🔒 Your information is protected.
+          </div>
+
+          <button type="submit" class="place-order-btn">
+            Place Order ✓
+          </button>
+
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+
+<!-- ================= ORDER SUCCESS ================= -->
+<div class="modal-overlay" id="orderSuccessModal">
+
+  <div class="success-modal">
+
+    <div class="success-icon">✓</div>
+    <h2>Order Confirmed!</h2>
+    <p>Thank you for shopping with Pahari Fruits Shop.</p>
+
+    <div class="order-number">
+      Order ID: <strong id="successOrderId"></strong>
+    </div>
+
+    <p class="success-message">
+      We will contact you shortly to confirm your order.
+    </p>
+
+    <button class="btn primary-btn" onclick="closeOrderSuccess()">Continue Shopping</button>
+    <button class="btn outline-btn" onclick="openOrders()">View My Orders</button>
+
+  </div>
+
+</div>
+
+
+<!-- ================= ACCOUNT ================= -->
+<div class="modal-overlay" id="accountModal">
+
+  <div class="account-modal">
+
+    <button class="modal-close" onclick="closeAccount()">×</button>
+
+    <div class="account-header">
+      <div class="account-avatar">👤</div>
+      <h2 id="accountTitle">Customer Account</h2>
+    </div>
+
+    <div id="accountLoggedOut">
+
+      <div class="account-tabs">
+        <button class="active" data-account-tab="login">Login</button>
+        <button data-account-tab="register">Register</button>
+      </div>
+
+      <form id="loginForm" class="account-form">
+        <input id="loginEmail" type="email" placeholder="Email address" required>
+        <input id="loginPassword" type="password" placeholder="Password" required>
+        <button class="btn primary-btn">Login</button>
+      </form>
+
+      <form id="registerForm" class="account-form hidden">
+        <input id="registerName" placeholder="Full name" required>
+        <input id="registerEmail" type="email" placeholder="Email address" required>
+        <input id="registerPhone" type="tel" placeholder="Phone number" required>
+        <input id="registerPassword" type="password" placeholder="Password" required>
+        <button class="btn primary-btn">Create Account</button>
+      </form>
 
     </div>
 
-</aside>
+    <div id="accountLoggedIn" class="hidden">
+
+      <div class="account-user-box">
+        <div class="account-avatar">👤</div>
+        <div>
+          <h3 id="profileName"></h3>
+          <p id="profileEmail"></p>
+        </div>
+      </div>
+
+      <div class="account-menu">
+        <button onclick="openOrders()">📦 My Orders</button>
+        <button onclick="openWishlist()">♡ Wishlist</button>
+        <button onclick="showProfile()">👤 My Profile</button>
+        <button onclick="logoutUser()">🚪 Logout</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 
+<!-- ================= ORDERS ================= -->
+<div class="modal-overlay" id="ordersModal">
 
-<!-- TOAST -->
+  <div class="orders-modal">
 
-<div
-    class="toast"
-    id="toast"
-></div>
+    <button class="modal-close" onclick="closeOrders()">×</button>
+
+    <h2>📦 My Orders</h2>
+
+    <div id="ordersList"></div>
+
+    <div id="noOrders" class="no-orders">
+      <div>📦</div>
+      <h3>No orders yet</h3>
+      <p>Your completed orders will appear here.</p>
+    </div>
+
+  </div>
+
+</div>
 
 
+<!-- ================= SUPPORT ================= -->
+<div class="modal-overlay" id="supportOverlay">
 
-<!-- JAVASCRIPT -->
+  <div class="support-modal">
+
+    <button class="modal-close" onclick="closeCustomerSupport()">×</button>
+
+    <div class="support-header">
+      <span>SUPPORT CENTER</span>
+      <h2>How Can We Help?</h2>
+    </div>
+
+    <div class="support-tabs">
+      <button class="active" data-support-tab="contact">Contact</button>
+      <button data-support-tab="faq">FAQ</button>
+      <button data-support-tab="chat">Live Chat</button>
+    </div>
+
+    <div class="support-panel active" id="supportContact">
+
+      <div class="support-contact-grid">
+
+        <a href="tel:+8801000000000">
+          <span>📞</span>
+          <b>Phone</b>
+          <small>Call us</small>
+        </a>
+
+        <a href="https://wa.me/8801000000000" target="_blank">
+          <span>💬</span>
+          <b>WhatsApp</b>
+          <small>Chat now</small>
+        </a>
+
+        <a href="https://m.me/" target="_blank">
+          <span>💙</span>
+          <b>Messenger</b>
+          <small>Message us</small>
+        </a>
+
+        <button onclick="switchSupportTab('chat')">
+          <span>💻</span>
+          <b>Live Chat</b>
+          <small>Chat with us</small>
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="support-panel" id="supportFaq">
+
+      <div class="support-faq">
+        <button>How long does delivery take? <span>+</span></button>
+        <div>Delivery time depends on your location and delivery area.</div>
+      </div>
+
+      <div class="support-faq">
+        <button>Can I cancel an order? <span>+</span></button>
+        <div>Yes, contact support before the order is shipped.</div>
+      </div>
+
+      <div class="support-faq">
+        <button>Do you offer refunds? <span>+</span></button>
+        <div>Return and refund requests are reviewed according to our policy.</div>
+      </div>
+
+    </div>
+
+    <div class="support-panel" id="supportChat">
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-message bot">
+          Hello! 👋 How can we help you today?
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input id="chatInput" placeholder="Type your message...">
+        <button id="sendChat">Send</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ================= IMPORTANT PAGES ================= -->
+<div class="modal-overlay" id="importantPageModal">
+
+  <div class="important-page-modal">
+
+    <button class="modal-close" onclick="closeImportantPage()">×</button>
+
+    <div id="importantPageContent"></div>
+
+  </div>
+
+</div>
+
+
+<!-- ================= ADMIN PANEL ================= -->
+<div class="modal-overlay" id="adminModal">
+
+  <div class="admin-modal">
+
+    <button class="modal-close" onclick="closeAdminPanel()">×</button>
+
+    <div class="admin-header">
+      <div>
+        <span>ADMINISTRATION</span>
+        <h2>⚙️ Admin Panel</h2>
+      </div>
+      <span class="admin-status">● Demo Mode</span>
+    </div>
+
+    <div class="admin-stats">
+
+      <div>
+        <span>🛍️</span>
+        <b id="adminProducts">20</b>
+        <small>Products</small>
+      </div>
+
+      <div>
+        <span>📦</span>
+        <b id="adminOrders">0</b>
+        <small>Orders</small>
+      </div>
+
+      <div>
+        <span>👥</span>
+        <b id="adminCustomers">0</b>
+        <small>Customers</small>
+      </div>
+
+      <div>
+        <span>💰</span>
+        <b id="adminSales">৳0</b>
+        <small>Sales</small>
+      </div>
+
+    </div>
+
+    <div class="admin-menu">
+
+      <button onclick="adminAction('Products')">🛍️ Product Management</button>
+      <button onclick="adminAction('Categories')">📁 Category Management</button>
+      <button onclick="adminAction('Orders')">📦 Order Management</button>
+      <button onclick="adminAction('Customers')">👥 Customer Management</button>
+      <button onclick="adminAction('Payments')">💳 Payment Management</button>
+      <button onclick="adminAction('Coupons')">🎟️ Coupon Management</button>
+      <button onclick="adminAction('Stock')">📊 Stock Management</button>
+      <button onclick="adminAction('Reports')">📈 Sales Reports</button>
+
+    </div>
+
+    <div class="admin-note">
+      ⚠️ This is a frontend demo admin panel. Real admin authentication,
+      database operations and payment management require a secure backend.
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ================= SECURITY NOTICE ================= -->
+<div class="security-bar">
+  🔒 Secure Shopping • Customer Data Protection • Safe Checkout
+</div>
+
 
 <script src="script.js"></script>
-
 </body>
 </html>
